@@ -1,0 +1,112 @@
+:root{
+  --link-color:white;
+  --icons-color:white; 
+  --social-icons-color: rgb(113, 4, 113);
+  --fonts: 'JetBrains Mono';
+  --font-weight-regular: 200;
+  --font-weight-medium: 400;
+  --font-weight-bold: 600;
+  --text-color:white;
+
+
+}
+/*  Font for website  */
+@font-face {
+  font-family:  'JetBrains Mono';
+  src: url(../../public/assets/Fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf) format('truetype');
+  font-weight: 200;
+  font-style: normal;
+
+}
+/*  body css  */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35) );
+}
+/* elemet  css  */
+h1{
+  font-size: 32.44px !important;
+  font-family: var(--fonts) !important;
+  font-weight: var(--font-weight-bold) !important;
+}
+h2{
+  font-size: 24px !important;
+  font-family: var(--fonts) !important;
+  font-weight: var(--font-weight-medium) !important;
+}
+h3{
+  font-size: 20px !important;
+  font-family: var(--fonts) !important;
+  font-weight: var(--font-weight-medium) !important;
+}
+h4{
+  font-size: 18px !important;
+  font-family: var(--fonts) !important;
+  font-weight: var(--font-weight-medium) !important;
+}
+p{
+  font-size: 18px !important;
+  font-family: var(--fonts) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+/*  universal container for the site  */
+.universal-container{
+  padding: 0px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  max-width: 1440px;
+  font-family:  sans-serif;
+}
+
+/*  this is for the navbar css started here  */
+.links{
+  position: relative;
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+}
+.links::after{
+  content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ height: 5px;
+ width: 0;
+ background-color: blueviolet;
+ transition: width 0.5s ease-in-out;
+ border-radius: 10px;
+}
+.links:hover::after {
+  width: 80%; /* Progress bar expands to full width */
+}
+.hero-text{
+  color: purple;
+}
+/* Navbar css ended here  */
+/* Starting of Home Page  */
+#icon{
+  color:var(--social-icons-color);
+  border-radius: 50%;
+  border:  solid white;
+  background-color: white;
+
+  transition: color 0.3s;
+}
+#heading{
+  color: rgb(113, 4, 113) !important;
+}
+.tech-stack-card{
+ width: 150px !important;
+  background:transparent !important;
+  border: none !important;
+  transition: transform 0.3s ease-in-out , box-shadow 0.3s ease-in-out !important;
+
+}
+
