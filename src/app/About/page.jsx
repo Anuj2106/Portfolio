@@ -14,7 +14,7 @@ const About = () => {
    <div className="container mt-5">
     <div className="row text-white">
       <h1> Know Who I'M</h1>
-<div className="col-6">
+<div className="col-lg-6 col-md-12">
 <h1>Hi Everyone, I am Anuj!</h1>
         <p>I am from  Chandigarh, India </p>
         <p>I have experience in React.js, Next.js, PHP, and MySQL, and I enjoy building scalable web applications.</p>
@@ -26,9 +26,9 @@ const About = () => {
             <li> 👉Traveling and discovering new places</li>
         </ul>
 
-        <p className="quote">"Code. Create. Innovate."</p>
+        <p className="quote col-12">"Code. Create. Innovate."</p>
 </div>
-<div className="col-6">
+<div className="col-lg-6 col-md-12 ">
 <img src="/assets/image/about.png" alt="intro" className="img-fluid" />
 </div>
 

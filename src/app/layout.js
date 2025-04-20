@@ -1,11 +1,12 @@
 "use client" ;
-import { Geist, Geist_Mono } from "next/font/google";
+
 
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import"bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "./Components/Navbar";
 import {  useEffect } from "react";
+
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body >
+      
       
           <div className="universal-container">
 

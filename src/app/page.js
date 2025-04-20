@@ -5,7 +5,7 @@ import { Intro } from "./Components/Intro";
 export default function Home() {
   return (
     <>
- 
+  
     <Hero/>
     <Intro/>
     <div className="container">
