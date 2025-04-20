@@ -1,12 +1,13 @@
 "use client";
 import React from 'react'
-import Particle from '../Components/Particles'
 
 const Contact = () => {
   return (
     <>
-  <Particle/>
-  <h1> hello </h1>
+
+      <h1 style={{ color: "white", position: "relative", zIndex: 1 }}>
+        Hello, Particles Behind!
+      </h1>
     </>
   
   )

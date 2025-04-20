@@ -7,10 +7,16 @@
   --font-weight-medium: 400;
   --font-weight-bold: 600;
   --text-color:white;
-
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
 
 }
-
+*{
+  color: var(--text-color);
+}
 /*  Font for website  */
 @font-face {
   font-family:  'JetBrains Mono';
@@ -20,31 +26,39 @@
 
 }
 /*  body css  */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
   font-family: var(--fonts);
-  font-weight: var(--font-weight-regular);
-  font-size: 18px;
+ 
   color: var(--text-color);
   
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  
 }
+
+
+
+
 /* elemet  css  */
 h1{
-  font-size: 32.44px !important;
+  /* font-size: 32.44px !important; */
   font-family: var(--fonts) !important;
   font-weight: var(--font-weight-bold) !important;
 }
 h2{
-  font-size: 24px !important;
+  /* font-size: 24px !important; */
   font-family: var(--fonts) !important;
   font-weight: var(--font-weight-medium) !important;
 }
 h3{
-  font-size: 20px !important;
+  /* font-size: 20px !important; */
   font-family: var(--fonts) !important;
   font-weight: var(--font-weight-medium) !important;
 }
@@ -93,9 +107,20 @@ p{
 .links:hover::after {
   width: 80%; /* Progress bar expands to full width */
 }
-.hero-text{
+.hero-text {
+  
   color: purple;
 }
+.effect-text{
+  color: purple;
+  min-height: 50px;
+}
+@media (max-width: 576px) {
+  .hero-text span {
+    text-align: center;
+  }
+}
+ 
 /* Navbar css ended here  */
 /* Starting of Home Page  */
 #icon{
@@ -109,6 +134,16 @@ p{
 #heading{
   color: rgb(113, 4, 113) !important;
 }
+.hero-section{
+  position: relative;
+  z-index: -1;
+ 
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  ;
+}
 /* teack stack css  */
 .tech-stack-card{
  width: 150px !important;
@@ -118,3 +153,39 @@ p{
 
 }
 
+.custom-toggler {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+}
+
+.hamburger {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: purple;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animations when toggled (into 'X') */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}

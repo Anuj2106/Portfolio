@@ -2,8 +2,8 @@
 import React from 'react'
 import Skills from '../Components/Skills'
 import './about.module.css'
-import TeachStack from '../Components/TeackStack'
 import ToolStack from '../Components/ToolStack'
+
 
 const About = () => {
   return (
@@ -35,6 +35,7 @@ const About = () => {
     </div>
    </div>
    <Skills/>
+  
    <ToolStack/>
    </section>
    </>

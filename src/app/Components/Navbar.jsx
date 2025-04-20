@@ -19,18 +19,15 @@ export default function Navbar() {
         <Link className="navbar-brand fw-bold" href="/">
           <h3 className="fw-bolder ">Anuj Kumar</h3>
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded={isMenuOpen ? "true" : "false"}
-          aria-label="Toggle navigation"
-          onClick={toggleMenu}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <button className="navbar-toggler custom-toggler" type="button" onClick={toggleMenu}>
+  <div className={`hamburger ${isMenuOpen ? "open" : ""}`}>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</button>
+
+
         <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
