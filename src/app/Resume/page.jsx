@@ -10,7 +10,7 @@ const Resume = () => {
         <div className="container mt-4">
           <div className="col-12 text-center">
             <Link href={pdf} target="_blank" download>
-            <button className="text-center btn btn-primary  mb-4">Resume</button>
+            <button className="text-center btn btn-primary  mb-4">Download </button>
             </Link>
           </div>
           <div className="resume-container p-4 rounded ">
