@@ -9,14 +9,7 @@ const SEOHead = () => {
         content="Hi, I'm Anuj Kumar — a frontend developer passionate about creating responsive and user-friendly websites using React, Next.js, and Bootstrap."
       />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HS0G6LJ42P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HS0G6LJ42P');
-</script>
+<meta name="google-site-verification" content="fwxtJOXdrBBKLsgh4ReGp0tMtTNQBntD79PQ0N6Got8" />
       {/* Open Graph for social sharing */}
       <meta property="og:title" content="Anuj Kumar | Frontend Developer Portfolio" />
       <meta
