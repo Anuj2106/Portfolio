@@ -6,6 +6,7 @@ Link
 const Resume = () => {
   const pdf="/assets/Pdf/Resume.pdf";
     return (
+      <section className="resume-section ">
         <div className="container mt-4">
           <div className="col-12 text-center">
             <Link href={pdf} target="_blank" download>
@@ -15,7 +16,7 @@ const Resume = () => {
           <div className="resume-container p-4 rounded ">
   <div className="text-center mb-4">
     <h2>Anuj Kumar</h2>
-    <p>📍 Chandigarh | 📞 +91 8968751655 | 📧 cseanuj9505@gmail.com</p>
+    <p>📍Chandigarh |   📧 cseanuj9505@gmail.com</p>
   </div>
 
   <h4 className="section-title text-primary border-bottom pb-2 mb-3">Career Objective</h4>
@@ -62,6 +63,7 @@ const Resume = () => {
 </div>
 
         </div>
+        </section>
     );
 };
 

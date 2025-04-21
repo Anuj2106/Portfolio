@@ -8,7 +8,7 @@ import ToolStack from '../Components/ToolStack'
 const About = () => {
   return (
    <>
-   <section className='about-section container '>
+   <section className='about-section container  '>
 
   
    <div className="container mt-5">

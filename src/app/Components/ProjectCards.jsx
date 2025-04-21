@@ -38,19 +38,19 @@ const ProjectCards = () => {
               {/* Buttons */}
               <div className="d-flex justify-content-center gap-2 mt-auto">
                 <a
-                  href={project.github || "#"}
-                  className="btn btn-outline-light btn-sm d-flex align-items-center"
+                  href={project.gitlink}
+                  className="btn btn-outline-light btn-sm button-link d-flex align-items-center"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <i className="bi bi-github me-2"></i> GitHub
                 </a>
-                <a
+                {/* <a
                   href={project.demo || "#"}
                   className="btn btn-outline-light btn-sm d-flex align-items-center"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <i className="bi bi-box-arrow-up-right me-2"></i> Demo
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

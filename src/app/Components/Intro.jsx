@@ -15,7 +15,7 @@ export const Intro = () => {
             </div>
     <div className='row justify-content-center mt-5'>
         <div className=" col-12 col-md-8 col-lg-6 text-white fs-1">
-        <p>I fell in love with web development, and along the way, I’ve learned a lot... I think. 🤷‍♂️</p>
+        <p>Somewhere between HTML tags and console logs, I realized this is what I’m meant to do.</p>
         <p>I am fluent in technologies like <strong>JavaScript, PHP, and MySQL</strong>.</p>
         <p>My field of interest is building innovative <strong>web applications and scalable products</strong>.</p>
         <p>Whenever possible, I love developing applications using <strong>Node.js</strong> and modern JavaScript frameworks like <strong>React.js and Next.js</strong>.</p>

@@ -14,10 +14,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark p-3">
+    <nav className="navbar navbar-expand-md navbar-dark sticky  fixed-top ">
       <div className="container border-bottom border-2 border-white">
         <Link className="navbar-brand fw-bold" href="/">
-          <h3 className="fw-bolder ">Anuj Kumar</h3>
+          <h3 className="fw-bolder hero-text ">Anuj Kumar</h3>
         </Link>
         <button className="navbar-toggler custom-toggler" type="button" onClick={toggleMenu}>
   <div className={`hamburger ${isMenuOpen ? "open" : ""}`}>
@@ -50,11 +50,11 @@ export default function Navbar() {
                 <i className="bi bi-file-earmark-richtext-fill"></i> Resume
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link href="/Contact" className="nav-link active links" onClick={closeNavbar}>
                 <i className="bi bi-telephone-fill"></i> Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

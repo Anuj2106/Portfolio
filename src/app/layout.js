@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar";
 import { useEffect } from "react"; 
 import Particles from "./Components/Particles";
 
+
 export default function RootLayout({ children }) {
   useEffect(() => {
     if (typeof document !== "undefined") {
@@ -20,13 +21,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>Anuj | Portfolio</title>
+       
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
         <Particles /> {/* Background particle animation */}
-        <div className="universal-container">
           <Navbar />
-          <main>{children}</main>
+        <div className="universal-container">
+          <main >{children}</main>
         </div>
       </body>
     </html>

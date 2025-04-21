@@ -5,7 +5,7 @@ import React from "react";
 const Project = () => {
   return (
     <>
-      <section className="project-section container mt-4">
+      <section className="project-section container ">
         <div className="row">
           <div className="col-12 text-center text-white">
             <h2>My Recent Works</h2>
