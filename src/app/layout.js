@@ -8,6 +8,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "./Components/Navbar";
 import { useEffect } from "react"; 
 import Particles from "./Components/Particles";
+import SEOHead from "./Components/Seohead";
 
 
 export default function RootLayout({ children }) {
@@ -19,11 +20,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <head>
-        <title>Anuj | Portfolio</title>
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
+      
+     <SEOHead />
       <body>
         <Particles /> {/* Background particle animation */}
           <Navbar />
